@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Urgent</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio id="bgMusic" loop preload="auto">
+  <source src="intro.opus" type="audio/mpeg">
+</audio>
+
+<div class="main-wrap">
+  <div class="profile-border-wrap">
+    <div class="profile-img-box"><img src="profil.png" alt="Karama"></div>
+  </div>
+  <h1 class="name-shine">Karama Panigoro</h1>
+  <button class="btn-kontak" id="openPopup">Kontak Penting</button>
+</div>
+
+<div id="popupOverlay">
+  <div class="popup-box">
+    <div class="popup-header"><h2>Kontak</h2><button class="close-btn" id="closePopup">×</button></div>
+    <div class="carousel-viewport" id="viewport"><div class="carousel-track" id="track"></div></div>
+    <div class="dots" id="dots"></div>
+  </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
